@@ -1,0 +1,17 @@
+{
+  "name": "web_app",
+  "version": "1.0.0",
+  "description": "My Node Web App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web"
+  ],
+  "author": "Faqahat",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
