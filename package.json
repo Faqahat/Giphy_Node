@@ -1,17 +1,16 @@
 {
-  "name": "web_app",
+  "name": "gify",
   "version": "1.0.0",
-  "description": "My Node Web App",
+  "description": "Cats gifs!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "non"
   },
-  "keywords": [
-    "web"
-  ],
-  "author": "Faqahat",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "express": "^4.16.3",
+    "lodash": "^4.17.10"
   }
 }
