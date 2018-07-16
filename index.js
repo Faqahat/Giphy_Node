@@ -8,11 +8,11 @@ http.createServer((req,res) => {
     if(req.url == "/")
     {
         var rand = names[Math.floor(Math.random()*names.length)];
-        const url = `https://api.giphy.com/v1/gifs/trending?api_key=${api_key}&tag=${rand}`;
+        const url = `https://api.giphy.com/v1/gifs/random?api_key=${api_key}&tag=${rand}`;
         res.writeHead(200,{"Content-Type":"text/html"});
         axios.get(url).then( x => {
             data = JSON.parse(JSON.stringify(x['data']));
-            imgSrc = data.data[0].images.original.url;
+            imgSrc = data.data.images.original.url;
             RawTitle = data.data.title;
             
            // Moretitle = RawTitle.replace("GIF","");
